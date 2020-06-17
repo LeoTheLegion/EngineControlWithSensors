@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Midterm</name>
+	<name>EngineControlWithSensors</name>
 	<comment></comment>
 	<projects>
 		<project>msp430_MSP-EXP430G2ET2553LP_core</project>
