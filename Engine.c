@@ -17,7 +17,6 @@ void setupEngine(){
 
 void setEnginePower(float percentage){
     powerPercentage = percentage;
-
     processState(currentState,powerPercentage);
 }
 
@@ -27,10 +26,12 @@ void setState(State newState){
     int power = 0;
     int rate = 20;
     processState(Brake,0);
+
     if(currentState != Brake)
         delay(200);
 
     if(newState != Brake){
+        //slowly transition
         while(power <= powerPercentage *100){
                 float newPower = (float)power/100.0;
                 processState(newState,newPower);
@@ -38,7 +39,6 @@ void setState(State newState){
                 delay(rate);
             }
     }
-
 
     currentState = newState;
 }

@@ -15,7 +15,6 @@
 #define CONTROL2 7
 #define MAXPOWER 225
 
-
 void setupMotor(void);
 void forward(float percentage);
 void backward(float percentage);
